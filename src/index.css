@@ -1,0 +1,64 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: "Outfit", sans-serif;
+    @apply bg-slate-950 text-gray-300 antialiased selection:bg-cyan-500/30 selection:text-cyan-100;
+}
+
+.title {
+    @apply md:text-5xl text-4xl font-bold text-white w-full mb-6 tracking-tight;
+}
+
+.section {
+    @apply w-full py-20 px-4 md:px-10 scroll-mt-[50px];
+}
+
+.sectioneven {
+    @apply w-full py-20 px-4 md:px-10 scroll-mt-[50px] bg-slate-900/30;
+}
+
+.clr {
+    @apply bg-cyan-500;
+}
+
+.logos {
+    @apply group-hover:text-cyan-400 text-slate-400 w-8 h-8 max-md:w-6 max-md:h-6 transition-colors duration-300;
+}
+
+.underline {
+    text-decoration: underline;
+    text-decoration-color: theme('colors.cyan.500');
+    text-underline-offset: 10px;
+}
+
+.truncated {
+    @apply line-clamp-3;
+}
+
+/* Modern Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: theme('colors.slate.950');
+}
+
+::-webkit-scrollbar-thumb {
+    background: theme('colors.slate.800');
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: theme('colors.cyan.600');
+}
+
+/* Glassmorphism utilities */
+.glass-panel {
+    @apply bg-slate-900/60 backdrop-blur-xl border border-white/5 shadow-2xl;
+}
+
+.glass-card {
+    @apply bg-slate-800/40 backdrop-blur-md border border-white/10 hover:border-cyan-500/20 shadow-md shadow-black/10 hover:shadow-xl hover:shadow-cyan-500/15 transition-all duration-500;
+}
