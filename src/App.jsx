@@ -4,6 +4,8 @@ import Hero from "./components/Hero.jsx";
 import About from "./components/About"; // import Projects from "./components/Projects";
 import Service from "./components/service";
 import Navbar   from "./components/navbar";
+import Work from "./components/work";
+import Projects from "./components/projects";
 import WorkflowAutomationCard from "./components/workflowautomationcard";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -30,11 +32,12 @@ function App() {
   return (
     <div className="flex min-h-screen bg-slate-950">
       <main className="w-full">
-        <Navbar />
+        
         <Hero />
         <About />
         <Service />
-
+        <Work />
+        <Projects />
       </main>
     </div>
   );

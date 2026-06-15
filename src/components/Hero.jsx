@@ -18,7 +18,8 @@ const BOX_BG = {
   return (
     <section className="min-h-screen bg-white flex items-center justify-center relative overflow-hidden">
 
-     {/* <div className="absolute inset-0" style={BOX_BG} /> */}
+{/*       
+     <div className="absolute inset-0" style={BOX_BG} />  */}
       
       {/* BACKGROUND TEXT */}
       <motion.h1
